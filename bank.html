@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">Welcome to your <span class="font-semibold text-teal-400">Bap Er
+                Bank!!!!</span> </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div
+                    class="bg-green-400 p-8 rounded-xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+                    Save Changes">
+                    <h4 class="text-3xl">Diposite</h4>
+                    <h2 class="text-5xl">$<span id="diposite-total">00</span></h2>
+                </div>
+                <div
+                    class="bg-orange-400 p-8 rounded-xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+                    Save Changes">
+                    <h4 class="text-3xl">Withdrow</h4>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div
+                    class="bg-red-400 p-8 rounded-xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+                    Save Changes">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h2 class="text-5xl">$ <span id="total-balance">1200</span></h2>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-400 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white mb-4 font-semibold text-teal-400 "> Please Diposite</h4>
+                    <input class="w-9/12 block mb-4" type="text" name="" id="diposite-field"
+                        placeholder="$ Amount you want to be deposite ">
+                    <button id="btn-diposite"
+                        class="text-white bg-cyan-400 px-8 py-2 hover:bg-sky-700 rounded-full">Deposite</button>
+                </div>
+                <div class="bg-cyan-400 p-8 rounded-xl">
+                    <h4 class="text-2xl text-white mb-4 font-semibold text-teal-400"> Please Withdrow</h4>
+                    <input id="withdraw-field" class="w-9/12 block mb-4" type="text"
+                        placeholder="$ Amount you want to be deposite ">
+                    <button id="btn-withdraw"
+                        class="text-white bg-pink-400 px-8 py-2 hover:bg-orange-700 rounded-full transition delay-150 duration-300 ease-in-out">Withdraw</button>
+                </div>
+
+        </section>
+    </main>
+    <script src="js/diposite.js"></script>
+    <script src="js/withdrow.js"></script>
+</body>
+
+</html>
